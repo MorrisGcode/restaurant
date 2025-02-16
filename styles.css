@@ -58,3 +58,9 @@
     margin-right: 30%;
     margin-top: 30px;
 }
+.abody{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: left;
+}
