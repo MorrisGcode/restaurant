@@ -1,0 +1,32 @@
+@media(max-width:768px){  /*for phone screen */
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:1024px){ /*for tablet screen */
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.links a{
+    color:black;
+
+}
+.links a:hover{
+    color:darkcyan;
+}
+.links a:active{
+    color: red;
+    
+}
