@@ -2,6 +2,12 @@
     .container{
         grid-template-columns: 1fr;
     }
+    .firstsec, .secondsec, .third, .fourth {
+        text-align: center;
+    }
+    .firstsec button {
+        margin: 1rem auto;
+    }
 }
 @media(max-width:1024px){ /*for tablet screen */
     .container{
@@ -36,22 +42,29 @@
     color: orangered;
 }
 .hbody{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
-.firstsec{
-    text-align: center;
-    margin: auto;
+.firstsec, .secondsec{
+    flex: 1 1 300px;
 }
 .secondsec img{
-    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
 }
 .hmid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     margin-top: 30px;
+}
+.third, .fourth{
+    flex: 1 1 300px;
+}
+.third img{
+    max-width: 100%;
+    height: auto;
 }
 .reserve{
     margin-left: 30%;
